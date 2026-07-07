@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Sayem — Supply Chain Analyst</title>
+<meta name="description" content="Mohammad Sayem — Certified Supply Chain Analyst (CSCA) specializing in procurement, logistics, and data analytics (SQL, Excel, Power BI).">
+
+<!--
+==============================================================
+  HOW TO EDIT THIS SITE (no coding needed)
+==============================================================
+  EASIEST WAY — the built-in editor:
+   1. Open index.html by double-clicking it (opens in your browser).
+   2. Click the small pencil button (bottom-right corner).
+   3. Edit any text, add/remove projects, certifications, timeline
+      entries, etc. Click "Apply Changes" to preview instantly.
+   4. Click "Download Updated File" — this saves a new index.html
+      with your changes to your Downloads folder.
+   5. Replace the old index.html (in this folder, and on your
+      hosting if you've published the site) with the downloaded one.
+
+  Note: the pencil button only appears when you open the file
+  directly on your computer, or when you add ?edit=true to the
+  end of your published site's URL — visitors never see it.
+
+  MANUAL WAY (advanced) — all the text also lives in the "SITE
+  CONTENT" block inside the <script> tag near the bottom of this
+  file. Open in Notepad, use Ctrl+F to find text, edit only what's
+  between the quote marks " ", keep commas/brackets intact, save,
+  then reopen in your browser.
+
+  If anything breaks or looks wrong, just undo your change or
+  ask Claude to fix it — paste back the file and describe what
+  you wanted changed.
+==============================================================
+-->
+
+<style>
+  :root{
+    --ink:#1c1c1c;         /* near-black — primary dark */
+    --ink-2:#1b2922;       /* deep forest green-black — card surface on dark */
+    --ink-border:rgba(255,255,255,.12);
+    --paper:#eef0ea;
+    --surface:#ffffff;
+    --accent:#4a6958;      /* sage green — primary accent, used deliberately, sparingly */
+    --accent-soft:#dde6df;
+    --accent-2:#435146;    /* deeper muted green — secondary accent */
+    --text:#1c1c1c;
+    --text-muted:#5b665f;
+    --text-on-ink:#f2f1ec;
+    --text-on-ink-muted:#a9b3a9;
+    --border:#dfe3dc;
+    --radius:6px;
+    --max:1120px;
+    --font-display:Georgia,"Palatino Linotype","Book Antiqua",Palatino,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-mono:ui-monospace,"Cascadia Code","SF Mono",Consolas,"Courier New",monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important;transition-duration:.001ms !important;}
+  }
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--text);
+    background:var(--paper);
+    line-height:1.65;
+  }
+  .container{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  a{color:inherit;}
+  h1,h2,h3{line-height:1.2;margin:0 0 12px;font-family:var(--font-display);font-weight:700;text-wrap:balance;}
+  section{padding:96px 0;}
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    font-size:.74rem;
+    font-weight:700;
+    font-family:var(--font-mono);
+    color:var(--accent);
+    margin:0 0 12px;
+  }
+  .section-head{max-width:640px;margin:0 auto 52px;text-align:center;}
+  .section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.01em;}
+  .section-head p{color:var(--text-muted);margin:0;max-width:60ch;margin:0 auto;}
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(18,21,28,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--ink-border);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    height:64px;
+  }
+  .logo{
+    font-family:var(--font-display);
+    font-weight:700;color:var(--text-on-ink);text-decoration:none;font-size:1.1rem;letter-spacing:.01em;
+  }
+  .logo span{color:var(--accent);}
+  .nav-links{
+    display:flex;align-items:center;gap:30px;
+  }
+  .nav-links a{
+    color:var(--text-on-ink-muted);text-decoration:none;font-size:.92rem;font-weight:500;
+    transition:color .15s;
+  }
+  .nav-links a:hover{color:var(--text-on-ink);}
+  .nav-links a.nav-cta{
+    background:var(--accent);color:var(--text-on-ink);padding:9px 18px;border-radius:var(--radius);font-weight:700;
+  }
+  .nav-links a.nav-cta:hover{color:var(--text-on-ink);opacity:.88;}
+  .nav-toggle{
+    display:none;flex-direction:column;justify-content:center;gap:5px;
+    width:38px;height:38px;background:none;border:none;cursor:pointer;
+  }
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--text-on-ink);margin:0 auto;}
+
+  @media (max-width:860px){
+    .nav-links{
+      position:absolute;top:64px;left:0;right:0;
+      background:var(--ink);
+      flex-direction:column;align-items:flex-start;gap:0;
+      padding:8px 24px 20px;
+      display:none;
+    }
+    .nav-links.open{display:flex;}
+    .nav-links a{width:100%;padding:12px 0;border-bottom:1px solid var(--ink-border);}
+    .nav-links a.nav-cta{margin-top:10px;text-align:center;}
+    .nav-toggle{display:flex;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--ink);
+    color:var(--text-on-ink);
+    padding:150px 0 100px;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;
+  }
+  .hero-focus{
+    font-family:var(--font-mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--text-on-ink-muted);margin:0 0 18px;
+  }
+  .hero-focus b{color:var(--accent);font-weight:700;}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);letter-spacing:-.02em;margin-bottom:8px;}
+  .hero-role{
+    font-size:clamp(1.02rem,1.8vw,1.2rem);color:var(--accent);font-weight:600;margin:0 0 20px;font-family:var(--font-display);
+  }
+  .hero-tagline{
+    max-width:52ch;margin:0 0 32px;color:var(--text-on-ink-muted);font-size:1.02rem;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px;}
+  .btn{
+    display:inline-block;padding:13px 26px;border-radius:var(--radius);
+    text-decoration:none;font-weight:700;font-size:.94rem;
+    transition:transform .15s ease, opacity .15s ease;
+    border:1.5px solid transparent;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--accent);color:var(--text-on-ink);}
+  .btn-outline{border-color:rgba(255,255,255,.3);color:var(--text-on-ink);}
+  .hero-social{display:flex;gap:14px;}
+  .hero-social a{
+    width:40px;height:40px;border-radius:var(--radius);
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,.06);border:1px solid var(--ink-border);
+    transition:background .15s, border-color .15s;
+  }
+  .hero-social a:hover{background:var(--accent);border-color:var(--accent);}
+  .hero-social a:hover svg{fill:#231705;}
+  .hero-social svg{width:17px;height:17px;fill:var(--text-on-ink);}
+
+  /* manifest box */
+  .manifest{
+    position:relative;
+    border:1px solid var(--ink-border);
+    padding:28px 26px;
+    background:rgba(255,255,255,.03);
+  }
+  .manifest::before,.manifest::after{
+    content:"";position:absolute;width:16px;height:16px;
+    border:2px solid var(--accent);
+  }
+  .manifest::before{top:-1px;left:-1px;border-right:none;border-bottom:none;}
+  .manifest::after{bottom:-1px;right:-1px;border-left:none;border-top:none;}
+  .manifest-header{display:flex;align-items:center;gap:16px;margin-bottom:18px;padding-bottom:18px;border-bottom:1px dashed var(--ink-border);}
+  .manifest-photo-wrap{
+    position:relative;width:64px;height:76px;flex:none;
+    border:1px solid var(--accent);background:var(--ink-2);overflow:hidden;
+  }
+  .manifest-photo,.manifest-photo-fallback{width:100%;height:100%;display:block;object-fit:cover;}
+  .manifest-photo-fallback{
+    display:none;align-items:center;justify-content:center;
+    font-family:var(--font-display);font-weight:800;color:var(--text-on-ink);
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+  .manifest-title{
+    font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--text-on-ink-muted);margin-bottom:6px;
+  }
+  .manifest-name{font-family:var(--font-display);font-weight:800;font-size:1.05rem;color:var(--text-on-ink);}
+  .manifest-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06);}
+  .manifest-row:last-child{border-bottom:none;}
+  .manifest-row .m-label{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-on-ink-muted);}
+  .manifest-row .m-value{font-size:.88rem;font-weight:600;text-align:right;color:var(--text-on-ink);}
+  @media (max-width:860px){.hero-grid{grid-template-columns:1fr;}}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start;
+  }
+  .about-grid p{color:var(--text-muted);max-width:62ch;}
+  .facts{
+    display:grid;gap:0;
+    background:var(--surface);border:1px solid var(--border);
+    border-radius:var(--radius);overflow:hidden;
+  }
+  .fact{display:flex;gap:14px;align-items:flex-start;font-size:.92rem;padding:16px 20px;border-bottom:1px solid var(--border);}
+  .fact:last-child{border-bottom:none;}
+  .fact b{display:block;color:var(--text);font-size:.94rem;margin-bottom:2px;}
+  .fact .flabel{color:var(--text-muted);font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;}
+  .fact span.icon{font-size:1.15rem;line-height:1.3;}
+  @media (max-width:760px){.about-grid{grid-template-columns:1fr;}}
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  }
+  .skill-card{
+    background:var(--surface);border:1px solid var(--border);
+    border-radius:var(--radius);padding:26px;
+    border-top:3px solid var(--accent);
+  }
+  .skill-card:nth-child(2){border-top-color:var(--accent-2);}
+  .skill-card h3{font-size:1rem;margin-bottom:16px;letter-spacing:-.01em;}
+  .pill-row{display:flex;flex-wrap:wrap;gap:8px;}
+  .pill{
+    background:var(--paper);color:var(--text);
+    border:1px solid var(--border);
+    padding:6px 12px;border-radius:999px;font-size:.8rem;font-weight:600;
+  }
+  @media (max-width:900px){.skills-grid{grid-template-columns:1fr;}}
+
+  /* ---------- PROJECTS ---------- */
+  .projects-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+  }
+  .project-card{
+    background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent-2);
+    border-radius:var(--radius);padding:26px;
+    display:flex;flex-direction:column;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .project-card.type-research,.project-card.type-app{border-left-color:var(--accent);}
+  .project-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(18,21,28,.1);}
+  .project-tag{
+    align-self:flex-start;
+    font-family:var(--font-mono);
+    font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--text-muted);margin-bottom:12px;
+  }
+  .project-card h3{font-size:1.08rem;letter-spacing:-.01em;}
+  .project-card p{color:var(--text-muted);font-size:.93rem;flex-grow:1;}
+  .project-links{display:flex;gap:18px;margin-top:16px;}
+  .project-links a{
+    font-size:.86rem;font-weight:700;color:var(--text);text-decoration:none;
+    display:flex;align-items:center;gap:6px;
+  }
+  .project-links a:hover{color:var(--accent-2);}
+  @media (max-width:760px){.projects-grid{grid-template-columns:1fr;}}
+
+  /* ---------- TIMELINE (Experience & Achievements) ---------- */
+  .timeline{
+    position:relative;max-width:780px;margin:0 auto;
+  }
+  .tl-item{
+    position:relative;display:grid;grid-template-columns:96px 1fr;gap:24px;
+    padding:0 0 36px 0;
+  }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:"";position:absolute;left:88px;top:6px;bottom:-36px;width:2px;background:var(--border);
+  }
+  .tl-item:last-child::before{display:none;}
+  .tl-item::after{
+    content:"";position:absolute;left:83px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--paper);z-index:1;
+  }
+  .tl-date{
+    font-family:var(--font-mono);font-size:.76rem;font-weight:700;color:var(--text-muted);
+    font-variant-numeric:tabular-nums;padding-top:0;text-align:right;align-self:start;
+  }
+  .tl-type{
+    display:inline-block;font-family:var(--font-mono);font-size:.66rem;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--accent-2);margin-bottom:6px;
+  }
+  .tl-item h3{font-size:1.02rem;margin:0 0 4px;letter-spacing:-.01em;}
+  .tl-item .tl-org{color:var(--text-muted);font-size:.88rem;font-weight:600;margin-bottom:8px;}
+  .tl-item p{margin:0;color:var(--text-muted);font-size:.92rem;}
+  @media (max-width:600px){
+    .tl-item{grid-template-columns:56px 1fr;gap:14px;}
+    .tl-item::before{left:48px;}
+    .tl-item::after{left:43px;}
+    .tl-date{font-size:.66rem;}
+  }
+
+  /* ---------- EDUCATION / CERTS ---------- */
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .edu-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;}
+  .edu-card h3{font-size:1rem;margin-bottom:20px;letter-spacing:-.01em;}
+  .edu-row{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+  .edu-row:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+  .edu-row b{display:block;font-size:.94rem;margin-bottom:3px;}
+  .edu-row span{color:var(--text-muted);font-size:.85rem;font-family:var(--font-mono);}
+  .cert-list{list-style:none;margin:0;padding:0;}
+  .cert-list li{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:11px 0;border-bottom:1px solid var(--border);font-size:.89rem;
+  }
+  .cert-list li:last-child{border-bottom:none;}
+  .cert-list .cdate{color:var(--text-muted);white-space:nowrap;font-size:.78rem;font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+  @media (max-width:760px){.edu-grid{grid-template-columns:1fr;}}
+
+  /* ---------- CONTACT ---------- */
+  .contact-section{background:var(--ink);color:var(--text-on-ink);}
+  .contact-section .eyebrow{color:var(--accent);}
+  .contact-section .section-head p{color:var(--text-on-ink-muted);}
+  .contact-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .contact-card{
+    background:rgba(255,255,255,.04);border:1px solid var(--ink-border);
+    border-radius:var(--radius);padding:24px 22px;
+    text-decoration:none;color:var(--text-on-ink);transition:background .15s,border-color .15s;
+  }
+  .contact-card:hover{background:rgba(255,255,255,.08);border-color:var(--accent);}
+  .contact-card .icon{font-size:1.4rem;margin-bottom:12px;display:block;}
+  .contact-card b{display:block;font-size:.92rem;}
+  .contact-card span{display:block;color:var(--text-on-ink-muted);font-size:.8rem;margin-top:5px;word-break:break-word;font-family:var(--font-mono);}
+  @media (max-width:760px){.contact-cards{grid-template-columns:1fr 1fr;}}
+  @media (max-width:460px){.contact-cards{grid-template-columns:1fr;}}
+
+  footer{
+    background:var(--ink);color:var(--text-on-ink-muted);text-align:center;
+    padding:24px 0;font-size:.8rem;font-family:var(--font-mono);border-top:1px solid var(--ink-border);
+  }
+
+  /* reveal-on-scroll */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease, transform .5s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* ---------- ON-PAGE EDITOR ---------- */
+  .edit-fab{
+    display:none;position:fixed;right:20px;bottom:20px;z-index:200;
+    width:48px;height:48px;border-radius:50%;
+    background:var(--ink);color:var(--text-on-ink);border:1px solid var(--ink-border);
+    font-size:1.15rem;cursor:pointer;opacity:.55;transition:opacity .2s,transform .2s;
+    align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+  .edit-fab:hover{opacity:1;transform:scale(1.06);}
+  .edit-overlay{
+    position:fixed;inset:0;background:rgba(10,12,10,.55);z-index:300;
+    display:none;justify-content:flex-end;
+  }
+  .edit-overlay.open{display:flex;}
+  .edit-panel{
+    position:relative;width:min(460px,100%);height:100%;background:var(--surface);
+    overflow-y:auto;padding:26px 24px 60px;box-shadow:-10px 0 30px rgba(0,0,0,.3);
+  }
+  .edit-panel h2{font-size:1.3rem;margin:0 0 4px;padding-right:30px;}
+  .edit-sub{color:var(--text-muted);font-size:.83rem;margin:0 0 18px;line-height:1.5;}
+  .edit-note{
+    background:var(--accent-soft);border:1px solid var(--border);border-radius:var(--radius);
+    padding:12px 14px;font-size:.8rem;color:var(--text);margin-bottom:18px;line-height:1.5;
+  }
+  .edit-panel-actions{
+    display:flex;gap:10px;margin-bottom:24px;position:sticky;top:-26px;
+    background:var(--surface);padding:10px 0 14px;z-index:2;
+  }
+  .edit-panel-actions .btn{flex:1;text-align:center;cursor:pointer;font-family:var(--font-body);}
+  .btn-muted{border:1.5px solid var(--border);color:var(--text);background:none;}
+  .edit-close{
+    position:absolute;top:22px;right:20px;background:none;border:none;
+    font-size:1.4rem;line-height:1;cursor:pointer;color:var(--text-muted);
+  }
+  .edit-section{margin-bottom:28px;padding-bottom:22px;border-bottom:1px solid var(--border);}
+  .edit-section:last-of-type{border-bottom:none;}
+  .edit-section h3{
+    font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--accent-2);margin:0 0 14px;
+  }
+  .edit-field{margin-bottom:12px;}
+  .edit-field label{display:block;font-size:.78rem;color:var(--text-muted);margin-bottom:4px;font-weight:600;}
+  .edit-field input,.edit-field textarea,.edit-field select{
+    width:100%;padding:9px 10px;border:1px solid var(--border);border-radius:var(--radius);
+    font-family:var(--font-body);font-size:.87rem;color:var(--text);background:var(--surface);
+  }
+  .edit-field textarea{resize:vertical;min-height:56px;}
+  .edit-item-card{
+    border:1px solid var(--border);border-radius:var(--radius);
+    padding:14px;margin-bottom:12px;background:var(--paper);
+  }
+  .edit-item-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  .edit-item-head span{
+    font-family:var(--font-mono);font-size:.72rem;color:var(--text-muted);
+    text-transform:uppercase;letter-spacing:.06em;
+  }
+  .edit-btn-remove{
+    background:none;border:1px solid var(--border);color:#8a3b2f;border-radius:var(--radius);
+    padding:4px 9px;font-size:.75rem;cursor:pointer;font-weight:700;
+  }
+  .edit-btn-add{
+    background:none;border:1.5px dashed var(--accent-2);color:var(--accent-2);border-radius:var(--radius);
+    padding:9px 14px;font-size:.85rem;cursor:pointer;font-weight:700;width:100%;
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">Mohammad<span>Sayem</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="hero-focus" id="heroFocus"></p>
+      <h1 id="heroName">Mohammad Sayem</h1>
+      <p class="hero-role" id="heroRole">Supply Chain Analyst · Procurement &amp; Data Analytics</p>
+      <p class="hero-tagline" id="heroTagline"></p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-social" id="heroSocial"></div>
+    </div>
+    <div class="manifest reveal">
+      <div class="manifest-header">
+        <div class="manifest-photo-wrap">
+          <img class="manifest-photo" id="manifestPhoto" alt="">
+          <div class="manifest-photo-fallback" id="manifestPhotoFallback"></div>
+        </div>
+        <div>
+          <div class="manifest-title">Candidate Profile</div>
+          <div class="manifest-name" id="manifestName"></div>
+        </div>
+      </div>
+      <div id="manifestRows"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>A little about me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p id="aboutBio"></p>
+      </div>
+      <div class="facts reveal" id="factsBox"></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:var(--surface);">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Skills</p>
+      <h2>What I work with</h2>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Projects</p>
+      <h2>Things I've built &amp; analyzed</h2>
+      <p>A mix of SQL data analysis, supply chain research, and a full web app concept.</p>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<section id="experience" style="background:var(--surface);">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Track Record</p>
+      <h2>Experience &amp; Achievements</h2>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Education</p>
+      <h2>Education &amp; Certifications</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal" id="eduCard">
+        <h3>Education</h3>
+      </div>
+      <div class="edu-card reveal" id="certCard">
+        <h3>Certifications</h3>
+        <ul class="cert-list" id="certList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk</h2>
+      <p>Open to internship and entry-level opportunities in supply chain, procurement, and data analytics.</p>
+    </div>
+    <div class="contact-cards" id="contactCards"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span id="footerText"></span>
+  </div>
+</footer>
+
+<button class="edit-fab" id="editToggleBtn" title="Edit this website" aria-label="Edit this website">✏️</button>
+<div class="edit-overlay" id="editOverlay">
+  <div class="edit-panel">
+    <button class="edit-close" id="editCloseBtn" aria-label="Close editor">&times;</button>
+    <h2>Edit Your Website</h2>
+    <p class="edit-sub">Changes below update the preview on this page right away.</p>
+    <div class="edit-note">To make changes visible to visitors: click "Download Updated File" below, then replace the old index.html (in your project folder, and on your hosting if you've published it) with the downloaded one.</div>
+    <div class="edit-panel-actions">
+      <button class="btn btn-primary" id="editApplyBtn">Apply Changes</button>
+      <button class="btn btn-muted" id="editDownloadBtn">Download Updated File</button>
+    </div>
+    <div id="editFormBody"></div>
+  </div>
+</div>
+
+<script id="siteScript">
+/* ==============================================================
+   SITE CONTENT — edit the text inside the quotes below.
+   This is the ONLY part of the file you should need to touch.
+================================================================= */
+const content = {
+  name: "Mohammad Sayem",
+  role: "Supply Chain Analyst · Procurement & Data Analytics",
+  focusLine: "SUPPLY CHAIN · PROCUREMENT · DATA ANALYTICS",
+  tagline: "Certified Supply Chain Analyst (CSCA) turning operational and market data into smarter procurement, inventory, and logistics decisions.",
+  initials: "MS",
+  photo: "profile.jpg",
+
+  email: "mohammedsayemqazi@gmail.com",
+  linkedin: "https://www.linkedin.com/in/sayem-undefined-098404420/",
+  github: "https://github.com/mohammedsayemqazi-byte",
+  location: "Dhaka, Bangladesh",
+
+  bio: "I'm a final-year Supply Chain Management major (minor in Marketing) at BRAC University and a Certified Supply Chain Analyst (CSCA). I pair hands-on supply chain knowledge — procurement, inventory, logistics, and demand planning — with data tools like SQL, Excel, and Power BI to turn operational data into clear, actionable decisions. I'm currently looking for an internship or entry-level role on a supply chain, procurement, or operations team at a leading company in Bangladesh.",
+
+  manifest: [
+    { label: "Status", value: "Available — Internship / Entry-level" },
+    { label: "Role", value: "Supply Chain & Procurement Analyst" },
+    { label: "Base", value: "Dhaka, Bangladesh" },
+    { label: "Certified", value: "CSCA (Nov 2025)" }
+  ],
+
+  facts: [
+    { icon: "🎓", label: "Education", value: "BBA, Supply Chain Management — BRAC University" },
+    { icon: "📍", label: "Location", value: "Dhaka, Bangladesh" },
+    { icon: "💼", label: "Looking for", value: "Internships & entry-level roles in Supply Chain / Procurement" },
+    { icon: "🏆", label: "Certified", value: "Certified Supply Chain Analyst (CSCA)" }
+  ],
+
+  skillGroups: [
+    {
+      title: "Tools & Technology",
+      skills: ["Microsoft Excel", "SQL", "Power BI", "Microsoft Office 365", "Google Workspace", "AI Prompting & Automation", "Claude Code"]
+    },
+    {
+      title: "Supply Chain & Operations",
+      skills: ["Inventory Management", "Procurement & Sourcing", "Logistics Coordination", "Retail Supply Chain", "Vendor Management", "Demand Planning"]
+    },
+    {
+      title: "Analytical & Strategic",
+      skills: ["Data-Driven Decision Making", "Predictive Modeling", "Business Case Analysis", "Market Research", "KPI Tracking"]
+    }
+  ],
+
+  projects: [
+    {
+      tag: "SQL · Data Analysis",
+      type: "sql",
+      title: "WC_Database",
+      description: "A SQL database project analyzing FIFA World Cup 2022 data — structured schema design and queries to surface insights on teams, players, and match statistics.",
+      github: "https://github.com/mohammedsayemqazi-byte/WC_database",
+      live: ""
+    },
+    {
+      tag: "SQL · Data Analysis",
+      type: "sql",
+      title: "Most-Demanded Workplace Skills & Professions (2023)",
+      description: "SQL analysis of job market data to identify the most in-demand skills and professions in 2023, surfacing hiring trends from real job posting data.",
+      github: "https://github.com/mohammedsayemqazi-byte/most-demanded-workplace-skills-and-professions-in-2023",
+      live: ""
+    },
+    {
+      tag: "Research · Supply Chain Analytics",
+      type: "research",
+      title: "Supply Chain Impact on Financials & Stock Market",
+      description: "Quantifies how supply chain operations affect company financials, and how financial performance in turn feeds into stock market valuation — analyzed by country, industry, and company.",
+      github: "",
+      live: "https://www.scdata.ai/project/75222"
+    },
+    {
+      tag: "JavaScript · Web App",
+      type: "app",
+      title: "Supply Dao App (\"Supply Buddy\")",
+      description: "A FoodPanda-style logistics platform concept for Bangladesh's Ready-Made Garments (RMG) industry, connecting supply chain stakeholders for on-demand sourcing and delivery.",
+      github: "https://github.com/mohammedsayemqazi-byte/Supply-Dao-App-project",
+      live: "https://supply-dao-app-project.vercel.app/"
+    }
+  ],
+
+  timeline: [
+    {
+      date: "Nov 2025",
+      type: "Certification",
+      title: "Certified Supply Chain Analyst (CSCA)",
+      org: "Professional Certification",
+      description: "Achieved CSCA certification, sponsored by a scholarship won at the ISCEA Global Case Competition."
+    },
+    {
+      date: "2025",
+      type: "Publication",
+      title: "\"AI-Driven Supply Chain Transformation at DHL\"",
+      org: "2nd International Case Conference on Business & Management (ICCBM 2025), Emerald Publishing",
+      description: "Co-authored case study on AI-driven transformation of supply chain operations at DHL."
+    },
+    {
+      date: "Sep 2025",
+      type: "Competition",
+      title: "Global Finalist — Top 50 of 400+ teams",
+      org: "ISCEA Global Case Competition 2025",
+      description: "Formulated data-driven solutions for inventory optimization, procurement strategy, and operational efficiency; awarded a scholarship for CSCA certification."
+    },
+    {
+      date: "Oct 2025",
+      type: "Competition",
+      title: "Semi-Finalist",
+      org: "BIZ VERSE 2025 — National Inter-University Case Competition",
+      description: "Presented data-driven business strategy recommendations to a panel of corporate leaders and industry experts."
+    },
+    {
+      date: "Mar – May 2022",
+      type: "Experience",
+      title: "Customer Experience & Management Supervisor",
+      org: "Moments Events Management, Doha, Qatar",
+      description: "Ran daily branch operations, managed physical inventory and equipment, handled branch finances and reporting, and presented operational improvement ideas to the CEO."
+    },
+    {
+      date: "Aug 2022 – Mar 2023",
+      type: "Leadership",
+      title: "Media Outreach & Partnerships",
+      org: "BRAC University Business Club (Biz Bee)",
+      description: "Supported club events, recruitment, onboarding, seminars, and corporate collaborations."
+    }
+  ],
+
+  education: [
+    { degree: "BBA — Supply Chain Management (Major), Marketing (Minor)", school: "BRAC University, Dhaka", year: "2022 – Present", grade: "CGPA 3.53" },
+    { degree: "Higher Secondary Certificate", school: "BMHM School & College, Doha, Qatar", year: "2018 – 2020", grade: "GPA 5.00" },
+    { degree: "Secondary School Certificate", school: "BMHM School & College, Doha, Qatar", year: "2016 – 2018", grade: "GPA 5.00" }
+  ],
+
+  certifications: [
+    { name: "Certified Supply Chain Analyst (CSCA)", date: "Nov 2025" },
+    { name: "Excel Basics for Data Analysis — IBM (Coursera)", date: "Jun 2026" },
+    { name: "Foundations: Data, Data, Everywhere — Google (Coursera)", date: "Jun 2026" },
+    { name: "Supply Chain Analytics Essentials — Rutgers University (Coursera)", date: "May 2026" },
+    { name: "Mastering Claude Code: From Setup to Real Projects — SkillsBooster Academy", date: "Jul 2026" },
+    { name: "Learn SQL Basics for Data Science — UC Davis (Coursera)", date: "Jul 2026" },
+    { name: "Claude Cowork for Automating Processes — SkillsBooster Academy", date: "Jul 2026" }
+  ]
+};
+
+/* ==============================================================
+   PAGE BUILDING LOGIC — you shouldn't need to edit anything
+   below this line.
+================================================================= */
+const iconSvg = {
+  mail: '<svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.8 6.1 7.8-6.1H4.2ZM4 7.4v11.1c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.4l-7.72 6.04a1.5 1.5 0 0 1-1.86 0L4 7.4Z"/></svg>',
+  linkedin: '<svg viewBox="0 0 24 24"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.5 8.75h3.9V21H3.5V8.75Zm6.6 0h3.74v1.68h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.6 4.69 6v6.6h-3.9v-5.85c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1v5.95H10.1V8.75Z"/></svg>',
+  github: '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.92.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>'
+};
+
+function socialLink(type, href){
+  return `<a href="${href}" target="_blank" rel="noopener" aria-label="${type}">${iconSvg[type]}</a>`;
+}
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.12 });
+
+function render(){
+  document.getElementById('heroFocus').innerHTML = content.focusLine.split(' · ').map((w,i)=> i===0 ? `<b>${w}</b>` : w).join(' · ');
+  document.getElementById('heroName').textContent = content.name;
+  document.getElementById('heroRole').textContent = content.role;
+  document.getElementById('heroTagline').textContent = content.tagline;
+  document.getElementById('heroSocial').innerHTML =
+    socialLink('mail', 'mailto:' + content.email) +
+    socialLink('linkedin', content.linkedin) +
+    socialLink('github', content.github);
+
+  document.getElementById('manifestName').textContent = content.name;
+  const manifestPhoto = document.getElementById('manifestPhoto');
+  const manifestPhotoFallback = document.getElementById('manifestPhotoFallback');
+  manifestPhotoFallback.textContent = content.initials;
+  manifestPhoto.style.display = 'block';
+  manifestPhotoFallback.style.display = 'none';
+  if (content.photo) {
+    manifestPhoto.src = content.photo;
+    manifestPhoto.alt = content.name;
+    manifestPhoto.onerror = function () {
+      this.style.display = 'none';
+      manifestPhotoFallback.style.display = 'flex';
+    };
+  } else {
+    manifestPhoto.style.display = 'none';
+    manifestPhotoFallback.style.display = 'flex';
+  }
+
+  document.getElementById('manifestRows').innerHTML = content.manifest.map(m => `
+    <div class="manifest-row">
+      <span class="m-label">${m.label}</span>
+      <span class="m-value">${m.value}</span>
+    </div>
+  `).join('');
+
+  document.getElementById('aboutBio').textContent = content.bio;
+  document.getElementById('factsBox').innerHTML = content.facts.map(f => `
+    <div class="fact">
+      <span class="icon">${f.icon}</span>
+      <div><span class="flabel">${f.label}</span><b>${f.value}</b></div>
+    </div>
+  `).join('');
+
+  document.getElementById('skillsGrid').innerHTML = content.skillGroups.map(g => `
+    <div class="skill-card reveal">
+      <h3>${g.title}</h3>
+      <div class="pill-row">
+        ${g.skills.map(s => `<span class="pill">${s}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('projectsGrid').innerHTML = content.projects.map(p => `
+    <div class="project-card type-${p.type} reveal">
+      <span class="project-tag">${p.tag}</span>
+      <h3>${p.title}</h3>
+      <p>${p.description}</p>
+      <div class="project-links">
+        ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener">GitHub &rarr;</a>` : ''}
+        ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener">Live / Details &rarr;</a>` : ''}
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('timeline').innerHTML = content.timeline.map(t => `
+    <div class="tl-item reveal">
+      <div class="tl-date">${t.date}</div>
+      <div>
+        <div class="tl-type">${t.type}</div>
+        <h3>${t.title}</h3>
+        <div class="tl-org">${t.org}</div>
+        <p>${t.description}</p>
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('eduCard').innerHTML = '<h3>Education</h3>' + content.education.map(e => `
+    <div class="edu-row">
+      <b>${e.degree}</b>
+      <span>${e.school} &middot; ${e.year} &middot; ${e.grade}</span>
+    </div>
+  `).join('');
+
+  document.getElementById('certList').innerHTML = content.certifications.map(c => `
+    <li><span>${c.name}</span><span class="cdate">${c.date}</span></li>
+  `).join('');
+
+  document.getElementById('contactCards').innerHTML = `
+    <a class="contact-card reveal" href="mailto:${content.email}">
+      <span class="icon">✉️</span><b>Email</b><span>${content.email}</span>
+    </a>
+    <a class="contact-card reveal" href="${content.linkedin}" target="_blank" rel="noopener">
+      <span class="icon">💼</span><b>LinkedIn</b><span>Connect with me</span>
+    </a>
+    <a class="contact-card reveal" href="${content.github}" target="_blank" rel="noopener">
+      <span class="icon">💻</span><b>GitHub</b><span>See my code</span>
+    </a>
+    <div class="contact-card reveal">
+      <span class="icon">📍</span><b>Location</b><span>${content.location}</span>
+    </div>
+  `;
+
+  document.getElementById('footerText').textContent =
+    `© ${new Date().getFullYear()} ${content.name}. Built with care.`;
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+}
+
+render();
+
+/* mobile nav toggle */
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+/* ==============================================================
+   ON-PAGE EDITOR — lets you update this website from the browser.
+   Visitors never see the edit button unless you add ?edit=true
+   to the URL (or you're viewing the file locally on your computer).
+================================================================= */
+function esc(str){
+  return String(str).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function buildEditForm(){
+  const c = content;
+  const html = `
+    <div class="edit-section">
+      <h3>Basic Info</h3>
+      <div class="edit-field"><label>Full Name</label><input type="text" data-bind="name" value="${esc(c.name)}"></div>
+      <div class="edit-field"><label>Role / Title</label><input type="text" data-bind="role" value="${esc(c.role)}"></div>
+      <div class="edit-field"><label>Focus line (small text above your name)</label><input type="text" data-bind="focusLine" value="${esc(c.focusLine)}"></div>
+      <div class="edit-field"><label>Tagline</label><textarea data-bind="tagline">${esc(c.tagline)}</textarea></div>
+      <div class="edit-field"><label>Email</label><input type="text" data-bind="email" value="${esc(c.email)}"></div>
+      <div class="edit-field"><label>LinkedIn URL</label><input type="text" data-bind="linkedin" value="${esc(c.linkedin)}"></div>
+      <div class="edit-field"><label>GitHub URL</label><input type="text" data-bind="github" value="${esc(c.github)}"></div>
+      <div class="edit-field"><label>Location</label><input type="text" data-bind="location" value="${esc(c.location)}"></div>
+      <div class="edit-field"><label>Photo filename (must sit next to index.html)</label><input type="text" data-bind="photo" value="${esc(c.photo)}"></div>
+      <div class="edit-field"><label>Initials (shown if photo is missing)</label><input type="text" data-bind="initials" value="${esc(c.initials)}"></div>
+    </div>
+
+    <div class="edit-section">
+      <h3>Candidate Profile Box</h3>
+      ${c.manifest.map((m,i) => `
+        <div class="edit-item-card">
+          <div class="edit-field"><label>Label</label><input type="text" data-bind="manifest.${i}.label" value="${esc(m.label)}"></div>
+          <div class="edit-field"><label>Value</label><input type="text" data-bind="manifest.${i}.value" value="${esc(m.value)}"></div>
+        </div>
+      `).join('')}
+    </div>
+
+    <div class="edit-section">
+      <h3>About</h3>
+      <div class="edit-field"><label>Bio</label><textarea data-bind="bio" style="min-height:120px;">${esc(c.bio)}</textarea></div>
+      ${c.facts.map((f,i) => `
+        <div class="edit-item-card">
+          <div class="edit-item-head"><span>Fact ${i+1}</span><button class="edit-btn-remove" data-action="remove-fact" data-index="${i}">Remove</button></div>
+          <div class="edit-field"><label>Icon (emoji)</label><input type="text" data-bind="facts.${i}.icon" value="${esc(f.icon)}"></div>
+          <div class="edit-field"><label>Label</label><input type="text" data-bind="facts.${i}.label" value="${esc(f.label)}"></div>
+          <div class="edit-field"><label>Value</label><input type="text" data-bind="facts.${i}.value" value="${esc(f.value)}"></div>
+        </div>
+      `).join('')}
+      <button class="edit-btn-add" data-action="add-fact">+ Add Fact</button>
+    </div>
+
+    <div class="edit-section">
+      <h3>Skills</h3>
+      ${c.skillGroups.map((g,i) => `
+        <div class="edit-item-card">
+          <div class="edit-field"><label>Group Title</label><input type="text" data-bind="skillGroups.${i}.title" value="${esc(g.title)}"></div>
+          <div class="edit-field"><label>Skills (comma-separated)</label><textarea data-bind="skillGroups.${i}.skillsText">${esc(g.skills.join(', '))}</textarea></div>
+        </div>
+      `).join('')}
+    </div>
+
+    <div class="edit-section">
+      <h3>Projects</h3>
+      ${c.projects.map((p,i) => `
+        <div class="edit-item-card">
+          <div class="edit-item-head"><span>Project ${i+1}</span><button class="edit-btn-remove" data-action="remove-project" data-index="${i}">Remove</button></div>
+          <div class="edit-field"><label>Tag (small label shown on the card)</label><input type="text" data-bind="projects.${i}.tag" value="${esc(p.tag)}"></div>
+          <div class="edit-field"><label>Category (controls accent color)</label>
+            <select data-bind="projects.${i}.type">
+              <option value="sql" ${p.type==='sql'?'selected':''}>SQL / Data</option>
+              <option value="research" ${p.type==='research'?'selected':''}>Research</option>
+              <option value="app" ${p.type==='app'?'selected':''}>App / Web</option>
+            </select>
+          </div>
+          <div class="edit-field"><label>Title</label><input type="text" data-bind="projects.${i}.title" value="${esc(p.title)}"></div>
+          <div class="edit-field"><label>Description</label><textarea data-bind="projects.${i}.description">${esc(p.description)}</textarea></div>
+          <div class="edit-field"><label>GitHub URL (optional)</label><input type="text" data-bind="projects.${i}.github" value="${esc(p.github)}"></div>
+          <div class="edit-field"><label>Live / Details URL (optional)</label><input type="text" data-bind="projects.${i}.live" value="${esc(p.live)}"></div>
+        </div>
+      `).join('')}
+      <button class="edit-btn-add" data-action="add-project">+ Add Project</button>
+    </div>
+
+    <div class="edit-section">
+      <h3>Experience &amp; Achievements</h3>
+      ${c.timeline.map((t,i) => `
+        <div class="edit-item-card">
+          <div class="edit-item-head"><span>Entry ${i+1}</span><button class="edit-btn-remove" data-action="remove-timeline" data-index="${i}">Remove</button></div>
+          <div class="edit-field"><label>Date</label><input type="text" data-bind="timeline.${i}.date" value="${esc(t.date)}"></div>
+          <div class="edit-field"><label>Type (e.g. Certification, Competition, Experience)</label><input type="text" data-bind="timeline.${i}.type" value="${esc(t.type)}"></div>
+          <div class="edit-field"><label>Title</label><input type="text" data-bind="timeline.${i}.title" value="${esc(t.title)}"></div>
+          <div class="edit-field"><label>Organization</label><input type="text" data-bind="timeline.${i}.org" value="${esc(t.org)}"></div>
+          <div class="edit-field"><label>Description</label><textarea data-bind="timeline.${i}.description">${esc(t.description)}</textarea></div>
+        </div>
+      `).join('')}
+      <button class="edit-btn-add" data-action="add-timeline">+ Add Entry</button>
+    </div>
+
+    <div class="edit-section">
+      <h3>Education</h3>
+      ${c.education.map((e,i) => `
+        <div class="edit-item-card">
+          <div class="edit-item-head"><span>Entry ${i+1}</span><button class="edit-btn-remove" data-action="remove-education" data-index="${i}">Remove</button></div>
+          <div class="edit-field"><label>Degree</label><input type="text" data-bind="education.${i}.degree" value="${esc(e.degree)}"></div>
+          <div class="edit-field"><label>School</label><input type="text" data-bind="education.${i}.school" value="${esc(e.school)}"></div>
+          <div class="edit-field"><label>Year</label><input type="text" data-bind="education.${i}.year" value="${esc(e.year)}"></div>
+          <div class="edit-field"><label>Grade</label><input type="text" data-bind="education.${i}.grade" value="${esc(e.grade)}"></div>
+        </div>
+      `).join('')}
+      <button class="edit-btn-add" data-action="add-education">+ Add Education</button>
+    </div>
+
+    <div class="edit-section">
+      <h3>Certifications</h3>
+      ${c.certifications.map((cert,i) => `
+        <div class="edit-item-card">
+          <div class="edit-item-head"><span>Cert ${i+1}</span><button class="edit-btn-remove" data-action="remove-cert" data-index="${i}">Remove</button></div>
+          <div class="edit-field"><label>Name</label><input type="text" data-bind="certifications.${i}.name" value="${esc(cert.name)}"></div>
+          <div class="edit-field"><label>Date</label><input type="text" data-bind="certifications.${i}.date" value="${esc(cert.date)}"></div>
+        </div>
+      `).join('')}
+      <button class="edit-btn-add" data-action="add-cert">+ Add Certification</button>
+    </div>
+  `;
+  document.getElementById('editFormBody').innerHTML = html;
+}
+
+function applyBind(path, value){
+  const parts = path.split('.');
+  if (parts.length === 1) {
+    content[parts[0]] = value;
+    return;
+  }
+  if (parts.length === 3) {
+    const arrName = parts[0];
+    const idx = parseInt(parts[1], 10);
+    const field = parts[2];
+    if (field === 'skillsText') {
+      content[arrName][idx].skills = value.split(',').map(s => s.trim()).filter(Boolean);
+    } else {
+      content[arrName][idx][field] = value;
+    }
+  }
+}
+
+const editFormBody = document.getElementById('editFormBody');
+
+editFormBody.addEventListener('input', (e) => {
+  const bind = e.target.dataset.bind;
+  if (bind) applyBind(bind, e.target.value);
+});
+
+editFormBody.addEventListener('change', (e) => {
+  const bind = e.target.dataset.bind;
+  if (bind) applyBind(bind, e.target.value);
+});
+
+const editBlankItem = {
+  fact: () => ({ icon: '⭐', label: 'New Fact', value: '' }),
+  project: () => ({ tag: 'New Tag', type: 'sql', title: 'New Project', description: '', github: '', live: '' }),
+  timeline: () => ({ date: '', type: 'Experience', title: 'New Entry', org: '', description: '' }),
+  education: () => ({ degree: '', school: '', year: '', grade: '' }),
+  cert: () => ({ name: 'New Certification', date: '' })
+};
+const editArrayName = {
+  fact: 'facts', project: 'projects', timeline: 'timeline', education: 'education', cert: 'certifications'
+};
+
+editFormBody.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-action]');
+  if (!btn) return;
+  const action = btn.dataset.action;
+  if (action.startsWith('add-')) {
+    const key = action.replace('add-', '');
+    content[editArrayName[key]].push(editBlankItem[key]());
+  } else if (action.startsWith('remove-')) {
+    const key = action.replace('remove-', '');
+    const idx = parseInt(btn.dataset.index, 10);
+    content[editArrayName[key]].splice(idx, 1);
+  } else {
+    return;
+  }
+  buildEditForm();
+  render();
+});
+
+function exportSite(){
+  const scriptEl = document.getElementById('siteScript');
+  const originalSrc = scriptEl.textContent;
+  const updatedSrc = originalSrc.replace(/const content = \{[\s\S]*?\n\};/, 'const content = ' + JSON.stringify(content, null, 2) + ';');
+  const clone = document.documentElement.cloneNode(true);
+  clone.querySelector('#siteScript').textContent = updatedSrc;
+  const finalHTML = '<!DOCTYPE html>\n' + clone.outerHTML;
+  const blob = new Blob([finalHTML], { type: 'text/html' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'index.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+document.getElementById('editApplyBtn').addEventListener('click', () => render());
+document.getElementById('editDownloadBtn').addEventListener('click', () => exportSite());
+document.getElementById('editCloseBtn').addEventListener('click', () => {
+  document.getElementById('editOverlay').classList.remove('open');
+});
+document.getElementById('editToggleBtn').addEventListener('click', () => {
+  buildEditForm();
+  document.getElementById('editOverlay').classList.add('open');
+});
+
+/* Show the edit button only when viewing the file locally, or when
+   ?edit=true is added to the site's URL — visitors never see it. */
+const isLocalFile = location.protocol === 'file:';
+const hasEditParam = new URLSearchParams(location.search).get('edit') === 'true';
+if (isLocalFile || hasEditParam) {
+  document.getElementById('editToggleBtn').style.display = 'flex';
+}
+</script>
+</body>
+</html>
