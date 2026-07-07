@@ -865,7 +865,10 @@ function buildEditForm(){
       <div class="edit-field"><label>LinkedIn URL</label><input type="text" data-bind="linkedin" value="${esc(c.linkedin)}"></div>
       <div class="edit-field"><label>GitHub URL</label><input type="text" data-bind="github" value="${esc(c.github)}"></div>
       <div class="edit-field"><label>Location</label><input type="text" data-bind="location" value="${esc(c.location)}"></div>
-      <div class="edit-field"><label>Photo filename (must sit next to index.html)</label><input type="text" data-bind="photo" value="${esc(c.photo)}"></div>
+      <div class="edit-field"><label>Upload Photo (recommended — works instantly, no file setup)</label><input type="file" accept="image/*" id="editPhotoUpload">
+        ${c.photo && c.photo.startsWith('data:') ? '<div style="font-size:.78rem;color:var(--text-muted);margin-top:4px;">Currently using an uploaded photo. Choose a new file above to replace it.</div>' : ''}
+      </div>
+      <div class="edit-field"><label>...or type an image filename instead (advanced, must sit next to index.html)</label><input type="text" data-bind="photo" value="${esc(c.photo && c.photo.startsWith('data:') ? '' : c.photo)}" placeholder="${c.photo && c.photo.startsWith('data:') ? 'e.g. profile.jpg — leave blank to keep uploaded photo' : ''}"></div>
       <div class="edit-field"><label>Initials (shown if photo is missing)</label><input type="text" data-bind="initials" value="${esc(c.initials)}"></div>
     </div>
 
@@ -967,6 +970,19 @@ function buildEditForm(){
     </div>
   `;
   document.getElementById('editFormBody').innerHTML = html;
+
+  const uploadInput = document.getElementById('editPhotoUpload');
+  uploadInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      content.photo = reader.result;
+      buildEditForm();
+      render();
+    };
+    reader.readAsDataURL(file);
+  });
 }
 
 function applyBind(path, value){
