@@ -445,7 +445,7 @@
       <h1 id="heroName">Mohammad Sayem</h1>
       <p class="hero-role" id="heroRole">Supply Chain Analyst · Procurement &amp; Data Analytics</p>
       <p class="hero-tagline" id="heroTagline"></p>
-      <div class="hero-actions">
+      <div class="hero-actions" id="heroActions">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
@@ -575,6 +575,7 @@ const content = {
   tagline: "Certified Supply Chain Analyst (CSCA) turning operational and market data into smarter procurement, inventory, and logistics decisions.",
   initials: "MS",
   photo: "profile.jpg",
+  resume: "Mohammad-Sayem-CV.pdf",
 
   email: "mohammedsayemqazi@gmail.com",
   linkedin: "https://www.linkedin.com/in/sayem-undefined-098404420/",
@@ -737,6 +738,12 @@ function render(){
     socialLink('linkedin', content.linkedin) +
     socialLink('github', content.github);
 
+  document.getElementById('heroActions').innerHTML = `
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    ${content.resume ? `<a href="${content.resume}" download="Mohammad-Sayem-CV.pdf" class="btn btn-outline">Download CV</a>` : ''}
+    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+  `;
+
   document.getElementById('manifestName').textContent = content.name;
   const manifestPhoto = document.getElementById('manifestPhoto');
   const manifestPhotoFallback = document.getElementById('manifestPhotoFallback');
@@ -870,6 +877,10 @@ function buildEditForm(){
       </div>
       <div class="edit-field"><label>...or type an image filename instead (advanced, must sit next to index.html)</label><input type="text" data-bind="photo" value="${esc(c.photo && c.photo.startsWith('data:') ? '' : c.photo)}" placeholder="${c.photo && c.photo.startsWith('data:') ? 'e.g. profile.jpg — leave blank to keep uploaded photo' : ''}"></div>
       <div class="edit-field"><label>Initials (shown if photo is missing)</label><input type="text" data-bind="initials" value="${esc(c.initials)}"></div>
+      <div class="edit-field"><label>Upload CV / Resume (PDF) — shows a "Download CV" button</label><input type="file" accept="application/pdf" id="editResumeUpload">
+        ${c.resume && c.resume.startsWith('data:') ? '<div style="font-size:.78rem;color:var(--text-muted);margin-top:4px;">Currently using an uploaded PDF. Choose a new file above to replace it.</div>' : ''}
+      </div>
+      <div class="edit-field"><label>...or type a PDF filename instead (advanced, must sit next to index.html)</label><input type="text" data-bind="resume" value="${esc(c.resume && c.resume.startsWith('data:') ? '' : c.resume)}" placeholder="${c.resume && c.resume.startsWith('data:') ? 'e.g. resume.pdf — leave blank to keep uploaded file' : 'Leave blank to hide the Download CV button'}"></div>
     </div>
 
     <div class="edit-section">
@@ -978,6 +989,19 @@ function buildEditForm(){
     const reader = new FileReader();
     reader.onload = () => {
       content.photo = reader.result;
+      buildEditForm();
+      render();
+    };
+    reader.readAsDataURL(file);
+  });
+
+  const resumeUploadInput = document.getElementById('editResumeUpload');
+  resumeUploadInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      content.resume = reader.result;
       buildEditForm();
       render();
     };
