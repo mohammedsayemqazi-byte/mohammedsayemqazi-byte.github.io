@@ -617,17 +617,17 @@ const content = {
     {
       tag: "SQL · Data Analysis",
       type: "sql",
-      title: "WC_Database",
-      description: "A SQL database project analyzing FIFA World Cup 2022 data — structured schema design and queries to surface insights on teams, players, and match statistics.",
-      github: "https://github.com/mohammedsayemqazi-byte/WC_database",
+      title: "Data Analyst Job Market Analysis",
+      description: "SQL analysis of the data analyst job market — exploring real job postings to surface trends in required skills, tools, and demand.",
+      github: "https://github.com/mohammedsayemqazi-byte/sql_project",
       live: ""
     },
     {
       tag: "SQL · Data Analysis",
       type: "sql",
-      title: "Most-Demanded Workplace Skills & Professions (2023)",
-      description: "SQL analysis of job market data to identify the most in-demand skills and professions in 2023, surfacing hiring trends from real job posting data.",
-      github: "https://github.com/mohammedsayemqazi-byte/most-demanded-workplace-skills-and-professions-in-2023",
+      title: "WC_Database",
+      description: "A SQL database project analyzing FIFA World Cup 2022 data — structured schema design and queries to surface insights on teams, players, and match statistics.",
+      github: "https://github.com/mohammedsayemqazi-byte/WC_database",
       live: ""
     },
     {
@@ -645,6 +645,22 @@ const content = {
       description: "A FoodPanda-style logistics platform concept for Bangladesh's Ready-Made Garments (RMG) industry, connecting supply chain stakeholders for on-demand sourcing and delivery.",
       github: "https://github.com/mohammedsayemqazi-byte/Supply-Dao-App-project",
       live: "https://supply-dao-app-project.vercel.app/"
+    },
+    {
+      tag: "Claude Code · Web App",
+      type: "app",
+      title: "My Portfolio Website",
+      description: "This very portfolio website — designed, styled, and built using Claude Code, complete with a built-in on-page editor for future updates.",
+      github: "https://github.com/mohammedsayemqazi-byte/mohammedsayemqazi-byte.github.io",
+      live: "https://mohammedsayemqazi-byte.github.io/"
+    },
+    {
+      tag: "Excel · Data Analysis",
+      type: "excel",
+      title: "Most In-Demand Skills & Salary by Country and Industry",
+      description: "Excel-based analysis identifying the most in-demand professional skills and corresponding salary ranges, broken down by country and industry.",
+      github: "",
+      live: "https://onedrive.live.com/personal/1dd8e83dd7a1d870/_layouts/15/doc.aspx?resid=252e8014-8183-4c14-b819-8d8e83626ae7&cid=1dd8e83dd7a1d870"
     }
   ],
 
@@ -926,6 +942,7 @@ function buildEditForm(){
           <div class="edit-field"><label>Category (controls accent color)</label>
             <select data-bind="projects.${i}.type">
               <option value="sql" ${p.type==='sql'?'selected':''}>SQL / Data</option>
+              <option value="excel" ${p.type==='excel'?'selected':''}>Excel / Data</option>
               <option value="research" ${p.type==='research'?'selected':''}>Research</option>
               <option value="app" ${p.type==='app'?'selected':''}>App / Web</option>
             </select>
